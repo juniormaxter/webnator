@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webnator - Encontre seus Fornecedores</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Webnator</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Cadastro</a></li>
+                <li><a href="#fornecedores">Fornecedores</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Busque por fornecedores...">
+                <button id="search-btn">Buscar</button>
+            </div>
+            <div class="highlights">
+                <h2>Produtos e Fornecedores Populares</h2>
+                <div class="products">
+                    <!-- Produtos e fornecedores populares -->
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Sobre o Webnator</h2>
+            <p>Webnator é uma plataforma que conecta vendedores a fornecedores confiáveis.</p>
+        </section>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Usuário">
+                <input type="password" id="password" placeholder="Senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+        <section id="signup">
+            <h2>Cadastro de Fornecedores</h2>
+            <form id="signup-form">
+                <input type="text" id="supplier-name" placeholder="Nome do Fornecedor">
+                <input type="text" id="address" placeholder="Endereço">
+                <div id="map"></div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        <section id="signup">
+            <h2>Cadastro de Compradores</h2>
+            <form id="signup-form">
+                <input type="text" id="supplier-name" placeholder="Nome do Comprador">
+                <input type="text" id="address" placeholder="Endereço">
+                <div id="map"></div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        <section id="fornecedores">
+            <h2>Área dos Fornecedores</h2>
+            <p>Aqui, fornecedores podem gerenciar seus produtos e dados.</p>
+            <!-- Conteúdo específico para fornecedores -->
+        </section>
+        <section id="clientes">
+            <h2>Área dos Clientes</h2>
+            <p>Aqui, clientes podem visualizar seus dados e assinaturas.</p>
+            <!-- Conteúdo específico para clientes -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Webnator. Todos os direitos reservados.</p>
+    </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_API_KEY&callback=initMap"></script>
+</body>
+</html>
+
